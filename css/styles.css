@@ -1,3 +1,11 @@
+body {
+    /* padding-top: 3rem; */
+    padding-bottom: 5rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* start top nav */
 #top_nav {
     min-height: 40px
@@ -47,3 +55,61 @@
 }
 
 /* end animasi klik */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 30rem;
+}
+
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
