@@ -4,14 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-/* .img-produk:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-} */
-
+/* back to top */
 .scrollTop {
     position: fixed;
     bottom: 10px;
@@ -37,7 +30,6 @@ body {
 #top_nav * {
     font-size: 1rem !important
 }
-
 /* end top nav */
 
 /* start animasi klik */
@@ -78,6 +70,10 @@ body {
 }
 
 /* end animasi klik */
+
+/* start loading */
+
+/* end loading */
 
 /* Carousel base class */
 .carousel {
