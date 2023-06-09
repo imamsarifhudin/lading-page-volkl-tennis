@@ -21,7 +21,6 @@ body {
     color: #f6fa03;
 }
 
-
 /* start top nav */
 #top_nav {
     min-height: 40px
@@ -89,7 +88,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 31rem;
+    height: 37.1rem;
 }
 
 
