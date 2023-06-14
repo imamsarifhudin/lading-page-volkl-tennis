@@ -20,6 +20,7 @@ body {
 .scrollTop:hover {
     color: #f6fa03;
 }
+
 /* end back to top */
 
 /* start top nav */
@@ -30,6 +31,7 @@ body {
 #top_nav * {
     font-size: 1rem !important
 }
+
 /* end top nav */
 
 /* start animasi klik */
@@ -134,7 +136,7 @@ body {
     perspective: 500px;
     border: none;
     background-color: inherit;
-	height: 50vh;
+    height: 50vh;
 }
 
 .cards .box {
@@ -216,4 +218,5 @@ body {
         margin-bottom: 20px;
     }
 }
+
 /* end testimoni */
