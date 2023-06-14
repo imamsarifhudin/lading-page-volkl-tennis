@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-/* back to top */
+/* start back to top */
 .scrollTop {
     position: fixed;
     bottom: 10px;
@@ -20,6 +20,7 @@ body {
 .scrollTop:hover {
     color: #f6fa03;
 }
+/* end back to top */
 
 /* start top nav */
 #top_nav {
@@ -70,10 +71,6 @@ body {
 
 /* end animasi klik */
 
-/* start loading */
-
-/* end loading */
-
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
@@ -90,7 +87,6 @@ body {
 .carousel-item {
     height: 37.1rem;
 }
-
 
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
@@ -110,10 +106,7 @@ body {
     letter-spacing: -.05rem;
 }
 
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
+/* RESPONSIVE CSS */
 
 @media (min-width: 40em) {
     .carousel-caption p {
@@ -132,3 +125,95 @@ body {
         margin-top: 7rem;
     }
 }
+
+/* start testimoni */
+.cards {
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+	height: 50vh;
+}
+
+.cards .box {
+    position: absolute;
+    color: #262626;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.cards .box.front {
+    background-image: url(img/pattern.png);
+    background-repeat: repeat;
+}
+
+.cards .box.front,
+.cards .box.back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .box.front img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #262626;
+    margin-bottom: 25px;
+}
+
+.cards:hover .box.front {
+    transform: rotateY(180deg);
+}
+
+.box.front h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.box.front h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.socials i {
+    margin: 0 15px;
+}
+
+.cards .box.back {
+    position: absolute;
+    background: #fff;
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.cards .box.back .fa-quote-left {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    font-size: 3.2rem;
+}
+
+.cards:hover .box.back {
+    transform: rotateY(360deg);
+}
+
+@media(max-width: 991.5px) {
+    .col-lg-4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+/* end testimoni */
